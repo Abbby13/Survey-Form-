@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+
+<head>
+  <link rel="stylesheet" href="style.css"> 
+<title> Coffee Shop Survey </title> 
+</head>
+
+<body>
+
+    <h2 id="title">Coffee Shop Customer Survey</h2> <!--User story Q1-->
+
+    <div id="description"> <!--User story Q2-->
+        <p> We value your feedback! Please fill out this survey to help us improve our coffee and service. </p> 
+    </div>
+
+    <div id="flex-container">
+
+        <form id="survey-form"> <!--User story Q3-->
+
+          <fieldset> 
+            <legend>Personal Information:</legend>
+
+            <div id="flex-container2"> 
+              <label id="name-label" for="name"> Name:</label> <!--User story Q4&10-->
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required> <!--User story Q11-->
+
+              <label id="number-label" for="age"> Age:</label> <!--User story Q7&10-->
+              <input type="number" id="number" name="age" min="1" max="100" placeholder= "Enter your age" required style="width: 100px"> <!--User story Q8&9-->
+            </div>
+
+              <label id="email-label" for="email"> Email:</label> <!--User story Q5&10-->
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required> <!--User story Q6-->
+
+          </fieldset> 
+          
+          <br>
+
+          <label id="coffee-type-label" for="coffee-type"> What type of coffee did you order?</label>
+          <select id="dropdown" name="coffee-type" required> <!--User story Q12-->
+            <option value="" disabled selected>Select your coffee type</option>
+            <option value="espresso">Espresso</option>
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="caramel macchiato">Caramel Macchiato</option>
+          </select>
+
+          <br><br>
+
+          <fieldset> 
+            <legend> How satisfied were you with your coffee? </legend>
+              <input type="radio" name="satisfaction" value="very satisfied" required> <!--User story Q13-->
+                  Very Satisfied
+              <input type="radio" name="satisfaction" value="satisfied">
+                  Satisfied
+              <input type="radio" name="satisfaction" value="neutral">
+                  Neutral
+              <input type="radio" name="satisfaction" value="dissatisfied">
+                  Dissatisfied
+              <input type="radio" name="satisfaction" value="very dissatisfied">
+                  Very Dissatisfied
+          </fieldset>
+
+          <br><br> 
+          <fieldset> 
+            <legend> What add-ons do you enjoy in your coffee? (Select all that apply) </legend>
+            <label> 
+              <input type="checkbox" name="add-ons" value="chocolate"> <!--User story 14-->
+                  Chocolate
+            </label>
+            <label> 
+              <input type="checkbox" name="add-ons" value="caramel syrup"> 
+                  Caramel Syrup
+            </label>
+            <label> 
+              <input type="checkbox" name="add-ons" value="vanilla syrup"> 
+                  Vanilla Syrup
+            </label>
+            <label> 
+              <input type="checkbox" name="add-ons" value="cinnamon"> 
+                  Cinnamon
+            </label>
+          </fieldset>
+
+          <br>
+
+          <label for="comments"> Any additional comments or feedbacks?</label> <!--User story Q15-->
+          <textarea id="comments" name="comments" rows="5" placeholder="Your feedback"></textarea>
+       
+         <br><br>
+
+          <button id="submit" type="submit">Submit</button> <!--User story Q16-->
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+body {
+    background-image: url(https://img.freepik.com/free-psd/coffee-beans-pattern-design_23-2151704749.jpg?ga=GA1.1.1041793998.1730526743&semt=ais_hybrid);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    position: relative;
+    text-align: right;
+    margin-right: 70px; 
+    margin-top: 50px;
+    font-size: 2vw;
+    font-family: Impact, fantasy;
+}
+
+#description {
+    position: relative;
+    text-align: right;
+    margin-right: 70px; 
+    margin-top: 1px;
+   font-family: Stencil Std, fantasy;
+    font-size: 1vw;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 80px; 
+    margin-top: 0;
+    font-size: 1vw;
+}
+
+#flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#survey-form {
+    width: 100%;
+    max-width: 500px; 
+    margin-right: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9;
+    font-family: Jazz LET, fantasy;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 55%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 15px;
+    border-style: outset;
+}
+
+input[type="number"], 
+textarea {
+    width: 100%;
+    padding: 2px;
+    font-size: .8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 15px;
+    border-style: outset;
+}
+
+#dropdown {
+    font-family: Jazz LET, fantasy; 
+    font-size: .8em;
+    padding: 2px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    border-style: outset;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; 
+    font-style: italic;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6F4E37;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #D2B48C; 
+}
